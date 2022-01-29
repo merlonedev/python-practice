@@ -1,17 +1,13 @@
 def triangles(a, b, c):
-    is_triangle = (
-        a + b > c and
-        a + c > b and
-        b + c > a
-        )
+    is_triangle = a + b > c and a + c > b and b + c > a
     if not is_triangle:
-        print('não é triângulo')
+        print("não é triângulo")
     elif a == b == c:
-        print('Equilátero')
+        print("Equilátero")
     elif a == b or a == c or b == c:
-        print('Isósceles')
+        print("Isósceles")
     else:
-        print('Escaleno')
-    
+        print("Escaleno")
+
 
 triangles(3, 4, 1)
